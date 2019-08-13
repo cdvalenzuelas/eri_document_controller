@@ -1,0 +1,60 @@
+
+
+.AppStyle {    
+    background: linear-gradient(to top right, #F0CB35, #C02425);
+    height: max-content;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    display: flex;
+    flex-direction: column  
+}
+
+.Submit {   
+    background-color: transparent;    
+    border-radius: 25px;
+    width: 200px;
+    height: 40px;  
+    color: rgb(235, 96, 3);
+    border: rgb(235, 96, 3) 3px solid;
+    outline: none;    
+}
+
+.formStyle {
+    font-size: 18px;    
+    background-color: white; 
+    text-align: left;     
+    border-radius: 20px;            
+    vertical-align: middle;
+    padding: 50px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: auto;
+    width: 200px;
+    box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.5);
+}
+
+.textStyle {       
+    margin-bottom: 10px;
+    background-color: white;
+    text-align: left;    
+    width: 200px;
+    height: 30px;
+    border: none; 
+    border-bottom: rgb(235, 96, 3) 2px solid;
+    outline: none;      
+}
+
+.Header {    
+    font-size: 18px;
+    color: white;
+    background-color: black;
+    display: inline-flex;
+    width: auto   
+}
+
+#LogIn {
+    width: auto;
+    display: inline-flex;    
+};
