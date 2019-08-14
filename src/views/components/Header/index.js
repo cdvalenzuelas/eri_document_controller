@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import menu from "./menu.svg";
 import '../components.css'
-import eri from '../../components/ERI.png'
+import eri from '../ERI.png'
 
 
 export class Header extends Component {
