@@ -2,8 +2,8 @@
 import express from 'express'
 import webpack from 'webpack'
 import path from 'path'
-import webpackdevMiddleware from 'webpack-dev-middleware'
-import webpackhotMiddleware from 'webpack-hot-middleware'
+import webpackDevMiddleware from 'webpack-dev-middleware'
+import webpackHotMiddleware from 'webpack-hot-middleware'
 import open from 'open'
 
 //Webpack Configuration
@@ -19,8 +19,8 @@ const app = express();
 const webpackCompiler = webpack(webpackConfig)
 
 //Webpack Middleware
-app.use(webpackdevMiddleware(webpackCompiler));
-app.use(webpackhotMiddleware(webpackCompiler));
+app.use(webpackDevMiddleware(webpackCompiler));
+app.use(webpackHotMiddleware(webpackCompiler));
 
 //Sending all trafiic to react
 

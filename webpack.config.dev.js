@@ -17,8 +17,7 @@ export default {
         PATHS.index
     ],
     output: {
-        path: PATH.biuld,
-        publicPath: '/',
+        path:  path.join(__dirname, 'src/public'),        
         filename: 'bundle.js'
     },
     plugins: [
@@ -26,19 +25,19 @@ export default {
         new webpack.NoEmitOnErrorsPlugin()
     ],
     module: {
-        loaders:[
+        rules:[
             {
                 test: /\.js?$/,
-                loaders: ['babel-loader'],
+                use: [{loader: 'babel-loader'}],
                 include: PATHS.base
             },
             {
                 test: /(\.css)?$/,
-                loaders: ['css-loader', 'style-loader']
+                use: [{loader: 'css-loader'}, {loader:'style-loader'}]
             },
             {
                 test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
-                loader: 'url-loader?limit=10000&mimetype=image/svg+xml'
+                use: {loader: 'url-loader?limit=10000&mimetype=image/svg+xml'}
             }
         ]
     }
